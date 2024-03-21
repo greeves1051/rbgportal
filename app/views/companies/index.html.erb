@@ -1,0 +1,8 @@
+<p><a href="<%= root_path %>">Back to Home</a></p>
+<h1>Companies</h1>
+<button><a href="<%= new_company_path %>">Create Company</a></button>
+<ul>
+	<% @companies.each do |company| %>
+		<li><a href="<%= company_path(company) %>"><%= company.name %></a></li>
+	<% end %>
+</ul>

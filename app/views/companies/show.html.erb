@@ -1,0 +1,9 @@
+<p><a href="<%= companies_path %>">Back to Companies</a></p>
+<h1><%= @company.name %></h1>
+<h2>Company Details</h2>
+<ul>
+	<li>Company Name: <%= @company.name %></li>
+	<li>Created at: <%= @company.created_at %></li>
+	<li>Updated at: <%= @company.updated_at %></li>
+	<li><a href="<%= edit_company_path(@company) %>">Edit Company</a></li>
+</ul>

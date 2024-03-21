@@ -1,0 +1,10 @@
+<p><a href="<%= brokers_path %>">Back to Brokers</a></p>
+<h1><%= @broker.name %></h1>
+<h2>Broker Details</h2>
+<ul>
+	<li>Broker Name: <%= @broker.name %></li>
+	<li>Created at: <%= @broker.created_at %></li>
+	<li>Updated at: <%= @broker.updated_at %></li>
+	<li><a href="<%= edit_broker_path(@broker) %>">Edit Broker</a></li>
+</ul>
+

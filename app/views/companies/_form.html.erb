@@ -1,0 +1,13 @@
+<%= form_with model: @company do |form| %>
+<div>
+	<%= form.label :name %>
+	<%= form.text_field :name %>
+</div>
+<div>
+	<%= form.label :status %>
+	<%= form.select :status, Company::VALID_COMPANY_STATUSES %>
+</div>
+<div>
+	<%= form.submit %>
+</div>
+<% end %>

@@ -1,0 +1,4 @@
+<p><a href="<%= person_path(@person) %>">Back to Person</p></a>
+<h1>Editing <%= @person.first_name %> <%= @person.last_name %></h1>
+
+<%= render "form", person: @person %>

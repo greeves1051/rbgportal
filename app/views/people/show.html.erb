@@ -1,0 +1,10 @@
+<p><a href="<%= people_path %>">Back to People</a></p>
+<h1><%= @person.first_name %> <%= @person.last_name %></h1>
+
+<h2>Person Details</h2>
+<ul>
+	<li>Person Email: <%= @person.email %></li>
+	<li>Created at: <%= @person.created_at %></li>
+	<li>Updated at: <%= @person.updated_at %></li>
+	<li><a href="<%= edit_person_path(@person) %>">Edit Person</a></li>
+</ul>
